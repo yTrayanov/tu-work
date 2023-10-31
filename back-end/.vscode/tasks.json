@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "tsc",
+            "type": "shell",
+            "command": "tsc",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            },
+            "problemMatcher": "$tsc"
+        }
+    ],
+    "keybindings": [
+        {
+            "key": "ctrl+shift+b",
+            "command": "workbench.action.tasks.build"
+        }
+    ]
+}

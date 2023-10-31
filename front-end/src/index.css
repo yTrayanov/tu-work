@@ -1,0 +1,165 @@
+.delete-list-item {
+    margin-left: auto; /* Push the icon to the right */
+    cursor: pointer;
+}
+
+.delete-list-item:hover {
+    color: #ff0000; /* Change the color to red or any other desired color */
+}
+
+.sidebar-list-item {
+    cursor: pointer;
+}
+
+.point {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red; /* Change the color as needed */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* This ensures that the points don't interfere with clicks */
+    z-index: 1001;
+}
+
+.image-column {
+    padding: 0 !important;
+}
+
+.image-container.image {
+    height: 100%;
+    width: 100%;
+}
+
+.pdf-dropdown {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-overlay-popup {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1003;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.image.overlay {
+    position: absolute;
+    opacity: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-right-buttons {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    z-index: 1004;
+}
+
+.close-button,
+.save-button {
+    margin-left: 10px;
+}
+
+.custom-file-input {
+    display: inline-block;
+    position: relative;
+    padding: 4px 8px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.custom-file-input:hover {
+    background-color: #3498db;
+}
+
+.custom-file-input input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-file-input .icon {
+    cursor: pointer;
+}
+
+#pdf-list-controls {
+    display: flex;
+    justify-content: end;
+    border-radius: 0;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+#overlap-controls {
+    position: absolute;
+    z-index: 1010;
+}
+
+#navigation {
+    border-bottom: 2px solid black;
+}
+
+.container-fluid {
+    padding: 0 !important ;
+}
+
+#side-bar-pdf {
+    height: 100vh;
+    border-right: 3px solid black;
+}
+
+.side-bar-list {
+    border: 2px solid black;
+    border-radius: 0;
+    height: 50%;
+}
+#alignPopup {
+    position: relative;
+}
+#save-overlap-popup {
+    position: absolute;
+    z-index: 1011;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid;
+    background: rgb(221, 221, 221);
+    padding: 15px;
+    border-radius: 10px;
+}
